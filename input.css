@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+table {
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    border: 1px solid
+}
+
+tbody {
+    display: block;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+  tbody tr:hover{transform: scale(1.05)}
+ tbody tr:nth-child(even) {
+    background-color: #ddd;
+}
+tbody tr:nth-child(odd) {
+    background-color: #bbb;
+}
+tbody tr {
+    height: 50px ;
+    width: 100%;
+}
+tbody::-webkit-scrollbar {
+    width: 5px; 
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* لون خلفية التتبع */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888; /* لون المقبض */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* لون المقبض عند التحويم */
+  }
+

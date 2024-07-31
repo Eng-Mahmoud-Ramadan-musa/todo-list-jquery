@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO-LIST</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="p-0 m-0 box-border font-serif capitalize w-full h-[100vh] overflow-hidden">
+    <header class="flex justify-between items-center py-2 px-[10%] bg-[#111] text-white z-50">
+        <a href="#" class="uppercase text-red-500 font-bold text-xl flex-col justify-center items-center">todo-list</a>
+        <nav class="flex gap-3 items-center">
+            <span><a href="#">home</a></span>
+            <i class="fa-solid fa fa-user-circle"></i>
+            <i class="fa-solid fa-right-from-bracket"></i>
+        </nav>
+    </header>
+    <section class="flex justify-center items-center h-20 w-full -z-10">
+        <div class="border w-full h-full relative bg-[#999] flex justify-center items-center gap-5 font-bold">
+            <input type="text" class="outline-none rounded-lg pl-3 w-52">
+            <button id="add" class="border px-4 py-1 rounded-xl bg-green-400 text-white hover:bg-green-500">add</button>
+        </div>
+    </section>
+    <section class="flex flex-col gap-5 w-full h-[75dvh] sm:h-[66.5dvh] overflow-hidden mt-9 border-2 border-black p-3">
+        <div class="mt-5 flex items-center justify-around">
+            <span>
+                <label for="completed">completed</label>
+                <input type="radio" id="completed" name="state">
+            </span>
+            <span>
+                <label for="note">note completed</label>
+                <input type="radio" id="note" name="state">
+            </span>
+        </div>
+        <div class="w-full h-[100dvh] flex justify-center items-center">
+            <table class="block w-full sm:w-5/6 lg:w-2/3 border-separate space-3">
+                <caption class="font-bold w-full z-50 uppercase text-3xl">todos</caption>
+                <thead class="bg-zinc-500 h-12 text-white">
+                    <tr>
+                        <td class="px-2 w-full">text</td>
+                        <td class="px-2 w-3 ">num</td>
+                        <td class="px-2 w-3  overflow-hidden ">updated</td>
+                        <td class="px-2 w-3  overflow-hidden">delete</td>    
+                    </tr>
+                </thead>
+                <tbody class="h-[50dvh] sm:h-[35dvh]">
+                </tbody>
+                </table>
+        </div>
+    </section>
+    <footer class="h-16 sm:h-10 flex items-center justify-around bg-[#111] text-white">
+        <p>design by @ <span class="text-red-500 font-bold text-lg sm:text-2xl">mahmoud ramadan</span></p><span>
+        <span class="flex gap-3 text-xl">
+            <a href="https://www.facebook.com/profile.php?id=100007283614477"><i class="fa-brands fa-facebook rounded-full bg-white text-blue-800"></i></a>
+            <a href="https://wa.me/+201129780862"><i class="fa-brands fa-whatsapp rounded-full text-white bg-green-500"></i></a>
+            <a href="https://www.linkedin.com/in/%D9%85%D8%AD%D9%85%D9%88%D8%AF-%D8%B1%D9%85%D8%B6%D8%A7%D9%86-177102312"><i class="fa-brands fa-linkedin-in bg-blue-800 px-px"></i></a>
+        </span>    
+    </span></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+</body>
+</html>
